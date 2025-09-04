@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "allowJs": false,
-    "jsx": "react-jsx",
-    "lib": ["esnext"],
-    "moduleResolution": "node",
-    "noEmit": true,
-    "skipLibCheck": true,
-    "strict": true,
     "target": "esnext",
-    "baseUrl": ".",
-    "paths": { "@/*": ["src/*"] }
-  }
+    "lib": ["esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "App.tsx"],
+  "exclude": ["node_modules"]
 }
